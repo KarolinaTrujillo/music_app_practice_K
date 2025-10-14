@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Música</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Reproductor de Música</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="player-section">
-            <div>
-                <div class="album-art" id="albumArt"></div>
-                <div class="song-info">
-                    <div class="song-title" id="songTitle">Selecciona una canción</div>
-                    <div class="song-artist" id="songArtist">Artista</div>
-                </div>
-            </div>
+  <h1>🎵 Reproductor de Música</h1>
 
-            <div>
-                <div class="progress-container">
-                    <div class="progress-bar" id="progressBar">
-                        <div class="progress" id="progress"></div>
-                    </div>
-                    <div class="time-info">
-                        <span id="currentTime">0:00</span>
-                        <span id="duration">0:00</span>
-                    </div>
-                </div>
+  <!-- Elemento de audio -->
+  <audio id="media" controls></audio>
 
-                <div class="controls">
-                    <button class="control-btn" id="prevBtn">⏮</button>
-                    <button class="control-btn play-btn" id="playBtn">▶</button>
-                    <button class="control-btn" id="nextBtn">⏭</button>
-                </div>
-            </div>
-        </div>
+  <!-- Barra de progreso -->
+  <progress id="progress" value="0" max="100"></progress>
 
-        <div class="playlist-section">
-            <div class="playlist-title">Lista de Reproducción</div>
-            <div id="playlist"></div>
-        </div>
-    </div>
+  <!-- Controles -->
+  <div class="controls">
+    <button id="prevBtn">⏮️ Anterior</button>
+    <button id="playBtn">▶️ Reproducir</button>
+    <button id="pauseBtn">⏸️ Pausar</button>
+    <button id="nextBtn">⏭️ Siguiente</button>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Script principal -->
+  <script type="module" src="main.js"></script>
 </body>
 </html>
