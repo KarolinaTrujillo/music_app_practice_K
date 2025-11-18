@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "EXAMPLE_APP": {
+    "MUSIC_APP_PRACTICE_K": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
