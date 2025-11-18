@@ -63,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "EXAMPLE_APP:build:production"
+              "buildTarget": "MUSIC_APP_PRACTICE_K:build:production"
             },
             "development": {
-              "buildTarget": "EXAMPLE_APP:build:development"
+              "buildTarget": "MUSIC_APP_PRACTICE_K:build:development"
             }
           },
           "defaultConfiguration": "development"
